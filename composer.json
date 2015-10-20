@@ -1,0 +1,23 @@
+{
+    "name": "understand/understand-monolog",
+    "description": "Understand.io Monoglog package.",
+    "keywords": ["log", "logging", "Understad", "Understand.io"],
+    "homepage": "https://github.com/understand/understand-monolog",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aivis Silins",
+            "email": "aivis.silins@gmail.com",
+            "homepage": "https://www.understand.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "monolog/monolog": "~1.6",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"UnderstandMonolog\\": "src/UnderstandMonolog"}
+    }
+}
