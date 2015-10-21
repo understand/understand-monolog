@@ -6,3 +6,4 @@
 [![Latest Unstable Version](https://poser.pugx.org/understand/understand-monolog/v/unstable.svg)](https://packagist.org/packages/understand/understand-monolog) 
 [![License](https://poser.pugx.org/understand/understand-monolog/license.svg)](https://packagist.org/packages/understand/understand-monolog)
 [![HHVM Status](http://hhvm.h4cc.de/badge/understand/understand-monolog.svg)](http://hhvm.h4cc.de/package/understand/understand-monolog)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/understand/understand-monolog/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/understand/understand-monolog/?branch=master)
