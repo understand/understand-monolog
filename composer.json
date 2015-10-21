@@ -1,7 +1,7 @@
 {
     "name": "understand/understand-monolog",
     "description": "Understand.io Monolog package.",
-    "keywords": ["log", "logging", "Understad", "Understand.io"],
+    "keywords": ["log", "logging", "Understand", "Understand.io"],
     "homepage": "https://github.com/understand/understand-monolog",
     "type": "library",
     "license": "MIT",
