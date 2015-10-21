@@ -1,6 +1,6 @@
 {
     "name": "understand/understand-monolog",
-    "description": "Understand.io Monoglog package.",
+    "description": "Understand.io Monolog package.",
     "keywords": ["log", "logging", "Understad", "Understand.io"],
     "homepage": "https://github.com/understand/understand-monolog",
     "type": "library",
@@ -19,5 +19,11 @@
     },
     "autoload": {
         "psr-4": {"UnderstandMonolog\\": "src/UnderstandMonolog"}
-    }
+    },
+    "extra": {
+        "branch-alias": {
+			"dev-master": "0.0-dev"
+		}
+    },
+    "minimum-stability": "stable"
 }
