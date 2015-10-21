@@ -4,7 +4,7 @@ use Monolog\Formatter\FormatterInterface;
 
 class UnderstandFormatter implements FormatterInterface
 {
-    
+
     /**
      * Format event
      *
@@ -47,7 +47,7 @@ class UnderstandFormatter implements FormatterInterface
         // U - Seconds since the Unix Epoch
         // u - Microseconds (added in PHP 5.2.2). Note that date() will always generate 000000
         // http://php.net/manual/en/function.date.php
-        $record['_timestamp'] = intval(round((float)$record['datetime']->format('U.u') * 1000));
+        $record['timestamp'] = intval(round((float)$record['datetime']->format('U.u') * 1000));
 
         unset($record['datetime']);
 
