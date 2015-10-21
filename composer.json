@@ -19,5 +19,11 @@
     },
     "autoload": {
         "psr-4": {"UnderstandMonolog\\": "src/UnderstandMonolog"}
-    }
+    },
+    "extra": {
+        "branch-alias": {
+			"dev-master": "0.0-dev"
+		}
+    },
+    "minimum-stability": "stable"
 }
