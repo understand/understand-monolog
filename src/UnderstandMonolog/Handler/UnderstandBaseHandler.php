@@ -142,7 +142,7 @@ abstract class UnderstandBaseHandler extends AbstractProcessingHandler
             throw new HandlerException($responseArr['error']);
         }
 
-        throw new HandlerException('Error. ' . ' Request data: ' . json_decode($requestData));
+        throw new HandlerException('Error. ' . ' Request data: ' . json_encode($requestData));
     }
 
     /**
