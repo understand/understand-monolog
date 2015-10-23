@@ -44,12 +44,15 @@ class UnderstandFormatter implements FormatterInterface
      */
     protected function convertDatetime(array $record)
     {
-        // U - Seconds since the Unix Epoch
-        // u - Microseconds (added in PHP 5.2.2). Note that date() will always generate 000000
-        // http://php.net/manual/en/function.date.php
-        $record['timestamp'] = intval(round((float)$record['datetime']->format('U.u') * 1000));
+        if (isset($record['datetime']) && $record['datetime'] instanceof \DateTime)
+        {
+            // U - Seconds since the Unix Epoch
+            // u - Microseconds (added in PHP 5.2.2). Note that date() will always generate 000000
+            // http://php.net/manual/en/function.date.php
+            $record['timestamp'] = intval(round((float)$record['datetime']->format('U.u') * 1000));
 
-        unset($record['datetime']);
+            unset($record['datetime']);
+        }
 
         return $record;
     }
