@@ -13,10 +13,8 @@ class ExceptionEncoder
     {
         $trace = $exception->getTrace();
         $className = get_class($exception);
-        $message = $exception->getMessage() ? $exception->getMessage() : $className;
 
         return [
-            'message' => $message,
             'class' => $className,
             'code' => $exception->getCode(),
             'file' => $exception->getFile(),

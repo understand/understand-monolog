@@ -14,7 +14,6 @@ class ExceptionEncoderTest extends PHPUnit_Framework_TestCase
         $exceptionArray = $encoder->exceptionToArray($exception);
         $stackTraceArray = $encoder->stackTraceToArray($exception->getTrace());
 
-        $this->assertSame($message, $exceptionArray['message']);
         $this->assertSame('DomainException', $exceptionArray['class']);
         $this->assertSame($code, $exceptionArray['code']);
         $this->assertSame(__FILE__, $exceptionArray['file']);
@@ -34,16 +33,7 @@ class ExceptionEncoderTest extends PHPUnit_Framework_TestCase
         $this->assertSame($originalStackTrace[0]['function'], $stackTraceArray[0]['function']);
         $this->assertSame($originalStackTrace[0]['class'], $stackTraceArray[0]['class']);
     }
-
-    public function testEmptyExceptionMessageCase()
-    {
-        $exception = new \DomainException;
-        $encoder = new ExceptionEncoder();
-        $exceptionArray = $encoder->exceptionToArray($exception);
-
-        $this->assertSame('DomainException', $exceptionArray['message']);
-    }
-
+    
     public function testStackTraceSerializationWithoutArgs()
     {
         $stackTrace = debug_backtrace();
