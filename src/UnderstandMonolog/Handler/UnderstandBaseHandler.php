@@ -107,7 +107,7 @@ abstract class UnderstandBaseHandler extends AbstractProcessingHandler
     /**
      * Parse respnse into array
      *
-     * @param type $response
+     * @param string $response
      * @param string $requestData
      * @return array
      */

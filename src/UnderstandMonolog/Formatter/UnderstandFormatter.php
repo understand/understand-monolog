@@ -9,7 +9,7 @@ class UnderstandFormatter implements FormatterInterface
      * Format event
      *
      * @param array $record
-     * @return string;
+     * @return string
      */
     public function format(array $record)
     {
@@ -40,7 +40,7 @@ class UnderstandFormatter implements FormatterInterface
      * Convert datetime to _timestamp format
      *
      * @param array $record
-     * @return type
+     * @return array
      */
     protected function convertDatetime(array $record)
     {
