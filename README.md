@@ -23,7 +23,6 @@ composer require understand/understand-monolog
 2. Add an Understand handler to Monolog
 ```php
 use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
 
 // input token from Understand.io
 $inputToken = 'ab1cd234-1234-45e6-789f-gh1fa1234567';
@@ -92,7 +91,6 @@ print_r($array);exit;
 
 ```php
 use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
 
 // input token from Understand.io
 $inputToken = 'ab1cd234-1234-45e6-789f-gh1fa1234567';
