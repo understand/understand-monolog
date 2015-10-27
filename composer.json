@@ -1,7 +1,7 @@
 {
     "name": "understand/understand-monolog",
     "description": "Understand.io Monolog package.",
-    "keywords": ["log", "logging", "Understand", "Understand.io"],
+    "keywords": ["log", "logging", "Understand", "Understand.io", "Monolog"],
     "homepage": "https://github.com/understand/understand-monolog",
     "type": "library",
     "license": "MIT",
@@ -22,11 +22,6 @@
     },
     "autoload": {
         "psr-4": {"UnderstandMonolog\\": "src/UnderstandMonolog"}
-    },
-    "extra": {
-        "branch-alias": {
-			"dev-master": "0.0-dev"
-		}
     },
     "minimum-stability": "stable"
 }
