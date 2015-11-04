@@ -11,6 +11,8 @@
 
 This package provides a [Monolog](https://github.com/Seldaek/monolog) handler and formatter for log data delivery to [Understand.io](https://www.understand.io).
 
+> You may also be interested in our [Laravel 4](https://github.com/understand/understand-laravel), [Laravel 5](https://github.com/understand/understand-laravel5) or [Laravel Lumen service provider handler](https://github.com/understand/understand-lumen)
+
 
 ### Quick start
 
