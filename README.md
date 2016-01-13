@@ -113,4 +113,4 @@ $monologLogger->addError($exception->getMessage(), $context);
 
 ### License
 
-The Laravel Understand.io Monolog package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Understand.io Monolog package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
